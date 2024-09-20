@@ -1,0 +1,192 @@
+/* container  */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* navbar  */
+@media  (min-width:1200px) {
+    
+    .navbar .container  ul {
+        display: flex;
+        gap: 20px;
+    }
+    .navbar .container  a {
+        color: var(--text-color2);
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .navbar .container a:hover,
+    .navbar .container a.active {
+        color: var(--text-color);
+    }
+    .navbar .container ul li.active {
+        border-bottom: 2px solid var(--primary-color);
+    }
+    .navbar .container ul li {
+        position: relative;
+    }
+    .navbar .container ul li::before  {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        left: 0;
+        bottom: -2px;
+        background-color: var(--primary-color);
+        transition: width 500ms;
+    }
+    .navbar .container ul li:hover::before{
+        width: 100%;
+    }
+    .navbar .container #icon {
+        display: none;
+    }    
+}
+/* landing  */
+
+@media (min-width: 792px) {
+
+    .landing {
+        height: 100vh;
+    }
+    .landing .container {
+        display: flex;
+        gap: 10%;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    .landing .image {
+        width: 44%;
+    }
+    .landing .text {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+    } 
+    .landing .text .heading {
+        width: 60%;
+        padding-top: 120px;
+        align-self: flex-start;
+    
+    }
+    .landing .text p {
+        width: 85%;
+        align-self:flex-start ;
+    }
+    .landing .text .group {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+
+/* chefs  */
+@media (min-width: 592px) {
+    .main-heading h3 {
+        width: fit-content;
+    }  
+}
+@media (min-width:800px) {
+    .chefs .container .cards {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .chefs .card {
+        width: calc(100% / 3);
+    }
+}
+
+/* gallery  */
+@media screen  and (min-width:700px){
+    .meals .item {
+        width: 50%;
+    }
+    .gallery .container .meals {
+        height: 1800px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:980px) {
+    .meals .item {
+        width: 32%;
+    }
+    .gallery .container .meals {
+        display: flex;
+        height: 1000px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .item-6 {
+        order: 8;
+    }
+    .item-5{
+        order: 7;
+    } 
+    .item-3 {
+        order: 6;
+    }
+   .item-2 {
+    order: 5;
+   }
+}
+
+/* contact  */
+@media screen and (min-width:850px){
+    .contact .list li {
+        width: 48%;
+    }
+    .contact .line {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* footer  */
+
+@media screen and (min-width:850px) {
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .footer .mealify {
+        width: 30%;
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+  
+    .footer .touch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -65px;
+    }  
+}
+
+
+
